@@ -69,7 +69,7 @@ else:
     print('incorrect input')      
         
 if(text in gif):
-  add = 'C:\\Users\\ritwi\\Documents\\Python\\Automatic-Indian-Sign-Language-Translator-master\\ISL_Gifs\\' + text + '.gif'
+  add = 'ISL_Gifs\\' + text + '.gif'
   animation = pyglet.image.load_animation(add)
   sprite = pyglet.sprite.Sprite(animation)
 
@@ -87,7 +87,7 @@ if(text in gif):
 else:
   for i in range(len(text)):
           if (text[i] in arr):
-            address = 'C:\\Users\\ritwi\\Documents\\Python\\Letters\\' + text[i] + '.jpg'
+            address = 'letters\\' + text[i] + '.jpg'
             try:
                Img = Image.open(address)
                Img1 = np.asarray(Img)
